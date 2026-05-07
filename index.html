@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">The Golden Fry — All About French Fries</title>
+  <meta name="description" data-i18n="meta.desc" content="A crispy journey through the history, culture, and craft of French fries." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER / NAV ============== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-mark">🍟</span>
+        <span class="brand-text" data-i18n="brand">The Golden Fry</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#blog" data-i18n="nav.blog">Blog</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+          <button class="lang-btn" data-lang="nl" aria-pressed="false">NL</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== HERO (full width/height with bg image) ============== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 data-i18n="hero.title">Crispy. Golden. Iconic.</h1>
+      <p data-i18n="hero.subtitle">A celebration of the world's most beloved snack — the French fry.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary" data-i18n="hero.cta1">Discover the Story</a>
+        <a href="#gallery" class="btn btn-ghost" data-i18n="hero.cta2">View Gallery</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">A Brief History</h2>
+      <div class="grid two-cols">
+        <div>
+          <p data-i18n="about.p1">French fries — also called frites, frieten, patat, or simply chips — are batonnet-cut deep-fried potatoes of disputed origin. Both Belgium and France lay claim to inventing this golden delight.</p>
+          <p data-i18n="about.p2">The standard cooking method involves a two-stage frying process: an initial bath at around 160°C cooks the potato through, while a second hotter bath at 190°C creates that irresistibly crispy exterior thanks to the Maillard reaction.</p>
+          <p data-i18n="about.p3">From Belgian frietkots to Parisian bistros, from Dutch patatje oorlog to Canadian poutine — fries have become a global culinary icon enjoyed in hundreds of variations across the world.</p>
+        </div>
+        <div class="fact-card">
+          <h3 data-i18n="about.factsTitle">Did you know?</h3>
+          <ul>
+            <li data-i18n="about.fact1">🇧🇪 Belgium has a museum dedicated entirely to fries — the Frietmuseum in Bruges.</li>
+            <li data-i18n="about.fact2">🇺🇸 The average American eats about 14 kg of fries per year.</li>
+            <li data-i18n="about.fact3">🇨🇦 Florenceville-Bristol calls itself "the French fry capital of the world".</li>
+            <li data-i18n="about.fact4">🥔 The Maillard reaction is what gives fries their golden color.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
+      <p class="section-lead" data-i18n="gallery.lead">Click any photo to enlarge.</p>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="images/durenne-loris-VzGdnv5URPI-unsplash.jpg" alt="Crispy golden French fries" loading="lazy" />
+          <figcaption data-i18n="gallery.cap1">Classic golden frites</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/eiliv-aceron-d5PbKQJ0Lu8-unsplash.jpg" alt="Fries served with sauce" loading="lazy" />
+          <figcaption data-i18n="gallery.cap2">Served with mayonnaise</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/matthew-reyes-5I5aqYJrdso-unsplash.jpg" alt="Fries close-up" loading="lazy" />
+          <figcaption data-i18n="gallery.cap3">Fresh out of the fryer</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/mitchell-luo-ChXHveqrb28-unsplash.jpg" alt="Fries presentation" loading="lazy" />
+          <figcaption data-i18n="gallery.cap4">A snack worth sharing</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== BLOG CAROUSEL ============== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section-title" data-i18n="blog.title">From the Blog</h2>
+
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn prev" aria-label="Previous" id="carouselPrev">&#10094;</button>
+
+        <div class="carousel-track" id="carouselTrack">
+          <article class="carousel-slide">
+            <img src="images/durenne-loris-VzGdnv5URPI-unsplash.jpg" alt="" loading="lazy" />
+            <div class="post-body">
+              <span class="post-date" data-i18n="blog.post1.date">May 2026</span>
+              <h3 data-i18n="blog.post1.title">The Belgian–French Fry Debate</h3>
+              <p data-i18n="blog.post1.excerpt">Who really invented the fry? We dig into the historical evidence on both sides of the border.</p>
+              <a href="#" class="read-more" data-i18n="blog.readmore">Read more →</a>
+            </div>
+          </article>
+
+          <article class="carousel-slide">
+            <img src="images/eiliv-aceron-d5PbKQJ0Lu8-unsplash.jpg" alt="" loading="lazy" />
+            <div class="post-body">
+              <span class="post-date" data-i18n="blog.post2.date">April 2026</span>
+              <h3 data-i18n="blog.post2.title">The Science of the Perfect Crisp</h3>
+              <p data-i18n="blog.post2.excerpt">Gelatinisation, Maillard reactions, and why the two-bath method wins every time.</p>
+              <a href="#" class="read-more" data-i18n="blog.readmore">Read more →</a>
+            </div>
+          </article>
+
+          <article class="carousel-slide">
+            <img src="images/matthew-reyes-5I5aqYJrdso-unsplash.jpg" alt="" loading="lazy" />
+            <div class="post-body">
+              <span class="post-date" data-i18n="blog.post3.date">March 2026</span>
+              <h3 data-i18n="blog.post3.title">A World Tour of Fries</h3>
+              <p data-i18n="blog.post3.excerpt">From poutine to patatje oorlog and currywurst pommes — fries around the globe.</p>
+              <a href="#" class="read-more" data-i18n="blog.readmore">Read more →</a>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next" id="carouselNext">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="section-lead" data-i18n="contact.lead">Got a fry tip or recipe to share? Drop us a line.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name" data-i18n="contact.name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email" data-i18n="contact.email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="subject" data-i18n="contact.subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div class="form-row">
+          <label for="message" data-i18n="contact.message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Golden Fry. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <!-- ============== POPUP (once per visit) ============== -->
+  <div class="modal" id="welcomeModal" aria-hidden="true" role="dialog" aria-labelledby="welcomeTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <h2 id="welcomeTitle" data-i18n="popup.title">Welcome, fry lover! 🍟</h2>
+      <p data-i18n="popup.body">Subscribe to our newsletter and get a free guide: <strong>"10 Secrets to the Perfect Fry"</strong> straight to your inbox.</p>
+      <form class="popup-form" id="popupForm">
+        <input type="email" required placeholder="your@email.com" data-i18n-placeholder="popup.placeholder" />
+        <button type="submit" class="btn btn-primary" data-i18n="popup.subscribe">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============== LIGHTBOX ============== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <img id="lightboxImg" alt="" />
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&#10095;</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- ============== COOKIE NOTICE ============== -->
+  <div class="cookie-notice" id="cookieNotice" role="region" aria-label="Cookie notice">
+    <p data-i18n="cookies.message">
+      We use cookies to improve your experience on our site. By continuing, you agree to our use of cookies.
+    </p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary" id="cookieAccept" data-i18n="cookies.accept">Accept</button>
+      <button class="btn btn-ghost" id="cookieDecline" data-i18n="cookies.decline">Decline</button>
+    </div>
+  </div>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
