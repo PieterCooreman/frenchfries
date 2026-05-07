@@ -56,14 +56,14 @@
   <!-- ============== ABOUT ============== -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title" data-i18n="about.title">A Brief History</h2>
+      <h2 class="section-title" data-i18n="about.title" data-reveal>A Brief History</h2>
       <div class="grid two-cols">
-        <div>
+        <div data-reveal="left">
           <p data-i18n="about.p1">French fries — also called frites, frieten, patat, or simply chips — are batonnet-cut deep-fried potatoes of disputed origin. Both Belgium and France lay claim to inventing this golden delight.</p>
           <p data-i18n="about.p2">The standard cooking method involves a two-stage frying process: an initial bath at around 160°C cooks the potato through, while a second hotter bath at 190°C creates that irresistibly crispy exterior thanks to the Maillard reaction.</p>
           <p data-i18n="about.p3">From Belgian frietkots to Parisian bistros, from Dutch patatje oorlog to Canadian poutine — fries have become a global culinary icon enjoyed in hundreds of variations across the world.</p>
         </div>
-        <div class="fact-card">
+        <div class="fact-card" data-reveal="right" data-delay="1">
           <h3 data-i18n="about.factsTitle">Did you know?</h3>
           <ul>
             <li data-i18n="about.fact1">🇧🇪 Belgium has a museum dedicated entirely to fries — the Frietmuseum in Bruges.</li>
@@ -79,23 +79,23 @@
   <!-- ============== GALLERY ============== -->
   <section class="section section-alt" id="gallery">
     <div class="container">
-      <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
-      <p class="section-lead" data-i18n="gallery.lead">Click any photo to enlarge.</p>
+      <h2 class="section-title" data-i18n="gallery.title" data-reveal>Gallery</h2>
+      <p class="section-lead" data-i18n="gallery.lead" data-reveal data-delay="1">Click any photo to enlarge.</p>
 
       <div class="gallery">
-        <figure class="gallery-item">
+        <figure class="gallery-item" data-reveal="zoom" data-delay="1">
           <img src="images/durenne-loris-VzGdnv5URPI-unsplash.jpg" alt="Crispy golden French fries" loading="lazy" />
           <figcaption data-i18n="gallery.cap1">Classic golden frites</figcaption>
         </figure>
-        <figure class="gallery-item">
+        <figure class="gallery-item" data-reveal="zoom" data-delay="2">
           <img src="images/eiliv-aceron-d5PbKQJ0Lu8-unsplash.jpg" alt="Fries served with sauce" loading="lazy" />
           <figcaption data-i18n="gallery.cap2">Served with mayonnaise</figcaption>
         </figure>
-        <figure class="gallery-item">
+        <figure class="gallery-item" data-reveal="zoom" data-delay="3">
           <img src="images/matthew-reyes-5I5aqYJrdso-unsplash.jpg" alt="Fries close-up" loading="lazy" />
           <figcaption data-i18n="gallery.cap3">Fresh out of the fryer</figcaption>
         </figure>
-        <figure class="gallery-item">
+        <figure class="gallery-item" data-reveal="zoom" data-delay="4">
           <img src="images/mitchell-luo-ChXHveqrb28-unsplash.jpg" alt="Fries presentation" loading="lazy" />
           <figcaption data-i18n="gallery.cap4">A snack worth sharing</figcaption>
         </figure>
@@ -106,9 +106,9 @@
   <!-- ============== BLOG CAROUSEL ============== -->
   <section class="section" id="blog">
     <div class="container">
-      <h2 class="section-title" data-i18n="blog.title">From the Blog</h2>
+      <h2 class="section-title" data-i18n="blog.title" data-reveal>From the Blog</h2>
 
-      <div class="carousel" id="carousel">
+      <div class="carousel" id="carousel" data-reveal="fade" data-delay="1">
         <button class="carousel-btn prev" aria-label="Previous" id="carouselPrev">&#10094;</button>
 
         <div class="carousel-track" id="carouselTrack">
@@ -153,10 +153,10 @@
   <!-- ============== CONTACT ============== -->
   <section class="section section-alt" id="contact">
     <div class="container">
-      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
-      <p class="section-lead" data-i18n="contact.lead">Got a fry tip or recipe to share? Drop us a line.</p>
+      <h2 class="section-title" data-i18n="contact.title" data-reveal>Get in Touch</h2>
+      <p class="section-lead" data-i18n="contact.lead" data-reveal data-delay="1">Got a fry tip or recipe to share? Drop us a line.</p>
 
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" novalidate data-reveal="zoom" data-delay="2">
         <div class="form-row">
           <label for="name" data-i18n="contact.name">Name</label>
           <input type="text" id="name" name="name" required />

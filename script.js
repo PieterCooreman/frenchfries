@@ -69,12 +69,14 @@
 
   navToggle.addEventListener('click', () => {
     const open = mainNav.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
     navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
   // close on link click (mobile)
   $$('.main-nav a').forEach(a => {
     a.addEventListener('click', () => {
       mainNav.classList.remove('open');
+      navToggle.classList.remove('open');
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
@@ -241,6 +243,42 @@
     status.className   = 'form-status success';
     form.reset();
     setTimeout(() => { status.textContent = ''; status.className = 'form-status'; }, 5000);
+  });
+
+  /* ============== Scroll-reveal animations ============== */
+  const reveals = $$('[data-reveal]');
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -60px 0px'
+    });
+    reveals.forEach(el => io.observe(el));
+  } else {
+    // Fallback: just show everything
+    reveals.forEach(el => el.classList.add('is-visible'));
+  }
+
+  /* ============== Ripple effect on buttons ============== */
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn');
+    if (!btn) return;
+    const rect = btn.getBoundingClientRect();
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    const size = Math.max(rect.width, rect.height);
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+    ripple.style.top  = (e.clientY - rect.top  - size / 2) + 'px';
+    btn.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
   });
 
 })();
