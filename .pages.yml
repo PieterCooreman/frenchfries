@@ -1,9 +1,9 @@
-media: media
+media: images
 content:
   - name: pages
     label: Pages
     type: collection
-    path: docs
+    path: 
     fields:
       - name: title
         type: string
